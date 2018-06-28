@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="selector_view">
+        <attr name="sv_tabLayout_height" format="dimension" />
+        <attr name="sv_indicator_color" format="color" />
+        <attr name="sv_text_select_color" format="color" />
+        <attr name="sv_text_unSelect_color" format="color" />
+    </declare-styleable>
+</resources>
