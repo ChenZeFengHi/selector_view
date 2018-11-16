@@ -1,10 +1,15 @@
 # 仿京东（升级版）多级选择器
 
 #### 项目介绍
+
+```
 仿京东（升级版）多级选择器
-支持动态添加RecycleView、Tab标签
-深度无限扩深
+
+支持动态添加RecycleView 及Tab 深度可无限扩深
+```
+
 #### 使用说明
+
 
 ```
 selectorView.setDataProvider(new DataProvider() {
@@ -20,14 +25,14 @@ selectorView.setDataProvider(new DataProvider() {
             list.add(new SelectModel("内蒙古" + (position + 1)));
             list.add(new SelectModel("湖北" + (position + 1)));
             list.add(new SelectModel("湖南" + (position + 1)));
-            if (position == 5) {//根据业务需要 send传入null会携带选中的数据回调onAddressSelected方法
+            if (position == 5) {
                 receiver.send(null);
                 return;
             }
             receiver.send(list);
         }
     });
-
+//根据业务需要 send传入null会携带选中的数据回调onAddressSelected方法
 selectorView.setSelectedListener(new SelectedListener() {
         @Override
         public void onAddressSelected(ArrayList<ISelectAble> selectAbles) {
