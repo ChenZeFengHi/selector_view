@@ -141,7 +141,7 @@ public class SelectorView extends LinearLayout {
                     }
                     if (position > 0) {
                         selectAbles.add(data);
-                        //添加选中 有bug！！1
+                    
                     }
 
                     RecyclerView view = new RecyclerView(getContext());
