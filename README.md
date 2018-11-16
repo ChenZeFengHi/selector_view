@@ -5,6 +5,8 @@
 支持动态添加RecycleView、Tab标签
 深度无限扩深
 #### 使用说明
+
+```
 selectorView.setDataProvider(new DataProvider() {
         @Override
         public void provideData(int position, DataReceiver receiver) {
@@ -32,3 +34,4 @@ selectorView.setSelectedListener(new SelectedListener() {
             Log.e("ambit", selectAbles.toString());
         }
     });
+```
