@@ -2,11 +2,11 @@
 
 #### 项目介绍
 
-```
+
 仿京东（升级版）多级选择器
 
 支持动态添加RecycleView 及Tab 深度可无限扩深
-```
+
 
 #### 使用说明
 
@@ -32,7 +32,7 @@ selectorView.setDataProvider(new DataProvider() {
             receiver.send(list);
         }
     });
-//根据业务需要 send传入null会携带选中的数据回调onAddressSelected方法
+ **//根据业务需要 send传入null会携带选中的数据回调onAddressSelected方法** 
 selectorView.setSelectedListener(new SelectedListener() {
         @Override
         public void onAddressSelected(ArrayList<ISelectAble> selectAbles) {
